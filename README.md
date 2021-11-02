@@ -8,12 +8,12 @@ The purpose of the game is to drive a “car” dodging the appearing trucks by 
 The MVP includes the following items graphically represented by colors:
 - List item 1: car (main Player)
 - List item 2: trucks (secondary character)
-- List item 3: barrier (secondary character) - backlog
 
 ## Backlog / nice to have
 - Musica de fondo
 - Un sonido para el salto
 - Un sonido para cuando chocas
+- Barrera para saltar
 
 ## Data structure
 ```
