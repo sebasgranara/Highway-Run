@@ -16,17 +16,21 @@ The MVP includes the following items graphically represented by colors:
 - Un sonido para cuando chocas
 
 ## Data structure
+```
 class Player {
 properties: life, posicion
 Methods: goRight, goLeft, jump
 }
+
 class Trucks {
 properties: direction.
 Methods: _appear,     
 }
+
 class Game { properties: player, trucks. Methods:
 \_start
 }
+```
 
 ## States & States Transitions
 Definition of the different states and their transition (transition functions):
