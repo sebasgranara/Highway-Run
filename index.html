@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highway Run</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+    <div class="splash">
+        <img src="https://ak.picdn.net/shutterstock/videos/18808595/thumb/1.jpg" alt="" width="100%" class="logo-img"/>
+        <div class="centered"> 
+            <h1> Highway Run!</h1>
+            <p>Lets see how far you arrive!</p>
+            <button id="start-button"> Start Game </button>
+            <p>Use the left and right arrow to control the car</p>
+        </div>
+    </div>
+ 
+    <div id="highway">
+        <canvas id="miCanvas" width="600" height="650"></canvas>
+        
+    </div> 
+</body>
+
+<script src="Player.js"></script>
+<script src="Truck.js"></script>
+<script src="Game.js"></script>
+<script src="main.js"></script>
+</html>
