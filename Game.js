@@ -1,11 +1,8 @@
 class Game {
     constructor(ctx){
         this.ctx = ctx;
-        //this.highway; //confirmar
         this.player = new Player(300, 550, 100, 100, "red"); 
         this.trucks = [new Truck(25, -250, 150, 100, "blue"), new Truck(425, -450, 150, 100, "blue")]
-        //this.points-counter;
-        //this.km-counter;
         this.interval;
     }
  
@@ -23,19 +20,19 @@ class Game {
     }
 
     _getRandomY(){
-        // math.random
-        // return X entre 0 y -2000
-        let randomY = Math.floor(Math.random() * this.)
+        let randomY = Math.random() * 150
     }
+        // return Y entre 0 y -2000
 
     _getRandomX(){
+        let randomY = Math.random() * 600 
         // math.random
         // return X entre 0 y 600
     }
 
     _generateTrucks(){
         this.interval = setInterval(function(){
-            const newTruck = new Truck(this._getRandomX(), this._getRandomY(), 1500, 100, "blue" );
+            const newTruck = new Truck(this._getRandomX(), this._getRandomY(), 600, 600, "blue" );
             this.trucks.push(newTruck);
         }, 500)
         // const newTruck1= new Truck(25, -250, 150, 100, "blue");
