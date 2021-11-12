@@ -10,22 +10,50 @@
 // }
 // game.start()
 
+var game;
 
-window.addEventListener("load", function () {
-    console.log("loaded");
-    function generateGame() {
-        const ctx = document.getElementById('miCanvas').getContext('2d');
-        const game = new Game(ctx);
+document.onload = (function(){
 
-        //function startGame(){
-          //document.getElementById("splash").style = "display: none";
-          //document.getElementById("micanvas").style = "display: ";
-         //}
-        
-      game.start();
+  const ctx = document.getElementById('miCanvas').getContext('2d');
+
+  const startBtn = document.getElementById("start-button");
+    startBtn.addEventListener("click", startGame);
+
+  const tryAgainBtn = document.getElementById("try-again");
+    tryAgainBtn.addEventListener("click", startGame);
+
+  function startGame(){
+          document.getElementById("splash").style = "display: none";
+          document.getElementById("miCanvas").style = "display: block";
+          document.getElementById("Game-Over").style = "display: none";
+          game = new Game(ctx);
+          game.start();
     }
 
-    const startBtn = document.getElementById("start-button");
-    startBtn.addEventListener("click", generateGame);
+})();
+
+
+
+  // window.addEventListener("load", function () {
+  //   console.log("loaded");
+
+    
+  //   function generateGame() {
+  //       const ctx = document.getElementById('miCanvas').getContext('2d');
+  //       const game = new Game(ctx);
+
+  //       function startGame(){
+  //         document.getElementById("splash").style = "display: none";
+  //         document.getElementById("micanvas").style = "display: block";
+  //           game.start();
+  //       }
+   
+  //   }
+
+  //   const startBtn = document.getElementById("start-button");
+  //   startBtn.addEventListener("click", generateGame);
+
+  //   const tryAgainBtn = document.getElementById("try-again");
+  //   tryAgainBtn.addEventListener("click", generateGame);
   
-  });
+  // });

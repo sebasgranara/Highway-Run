@@ -9,24 +9,31 @@
 </head>
 
 <body>
-    <div class="splash">
+    <div id="splash">
         <img src="https://ak.picdn.net/shutterstock/videos/18808595/thumb/1.jpg" alt="" width="100%" class="logo-img"/>
         <div class="centered"> 
             <h1> Highway Run!</h1>
-            <p>Lets see how far you arrive!</p>
-            <button id="start-button"> Start Game </button>
+            <p>Lets see how far you get!</p>
+            <button id="start-button"> START GAME </button>
             <p>Use the left and right arrow to control the car</p>
         </div>
     </div>
- 
-    <div id="highway">
-        <canvas id="miCanvas" width="600" height="650"></canvas>
-        
-    </div> 
-</body>
+    
+        <canvas id="miCanvas" width="600" height="650" style="display: none;"></canvas>
+    
+    
+    <div id="Game-Over" style="display: none;">
+        <h1> GAME OVER</h1>
+        <p> Oops! You crushed in the Highway</p>
+        <button id="try-again"> TRY AGAIN</button>
+    </div>
 
+
+<script src="assets.js"></script>
 <script src="Player.js"></script>
 <script src="Truck.js"></script>
 <script src="Game.js"></script>
 <script src="main.js"></script>
+
+    </body>
 </html>

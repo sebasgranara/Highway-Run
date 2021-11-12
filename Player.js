@@ -1,3 +1,4 @@
+
 class Player {
     constructor(x,y, width, height, color){
         this.x = x;
@@ -10,21 +11,26 @@ class Player {
 _drawPlayer(ctx){
     ctx.fillStyle = this.color;
     ctx.fillRect(this.x, this.y, this.width, this.height);
-
+    ctx.drawImage(
+       playerSprite.sprite,
+       playerSprite.x,
+       playerSprite.y,
+       playerSprite.width,
+       playerSprite.height,
+       this.x, 
+       this.y, 
+       this.width, 
+       this.height 
+   )
 }
 
 moveRight(){
-    this.x = this.x + 15;
+    this.x = this.x + 40;
     }
     ///como hacer para que se quede dentro del canvas
 
 moveLeft(){
-    this.x = this.x - 15;
+    this.x = this.x - 40;
     }
 }
 
-//collision --> 
-//counter de cada auto que pasa sin chocar
-//counter de tiempo o distancia recorrida?
-//animacion: lineas carril + arboles costado?
-//dificultad: cada vez mayores camiones, mayor velocidad?
