@@ -62,7 +62,7 @@ class Game {
         clearInterval(this.interval);
         this.trucks.forEach((truck) => clearInterval(truck.interval));
         document.getElementById("Game-Over").style = "display: block;";
-        document.getElementById("Game-Over").style = "display: absolute;";
+        document.getElementById("Game-Over").style = "display: absolute; position: absolute; z-index: 5px';"; 
 
     }
 
